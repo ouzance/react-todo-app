@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(#dddddd));
+  background: linear-gradient(90deg, white 0%, #dddddd 100%);
+  font-family: 'Roboto Mono', monospace;
+}
+
+#root .app {
+  color: #272727;
+  margin: 5% auto;
+  padding: 8px;
+  width: 720px;
+  border-radius: 2px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#root .app h1 {
+  text-align: center;
+  margin: 12px 0 18px;
+  font-weight: 500;
+}
+
+#root .app .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+#root .app .inputs-add {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 30px;
+  padding: 0 8px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #f3f3f3;
+  -webkit-transition: 100ms background-color ease-in;
+  transition: 100ms background-color ease-in;
+}
+
+#root .app .inputs-add::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#root .app .inputs-add:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#root .app .inputs-add::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#root .app .inputs-add::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#root .app .inputs-btn {
+  line-height: 30px;
+  padding: 0 8px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: 100ms background-color ease-in;
+  transition: 100ms background-color ease-in;
+  background-color: #f3f3f3;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#root .app .inputs-btn:hover {
+  background-color: #e6e6e6;
+}
+
+#root .app .todos ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  line-height: 30px;
+  border-radius: 3px;
+  padding: 0 8px;
+  overflow: hidden;
+  -webkit-transition: 100ms background-color;
+  transition: 100ms background-color;
+}
+
+#root .app .todos ul li:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+#root .app .todos ul li:hover {
+  background-color: #f3f3f3;
+}
+
+#root .app .todos ul li .todos-item {
+  color: #000;
+  cursor: pointer;
+}
+
+#root .app .todos ul li .done {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: line-through;
+}
+
+#root .app .todos ul li .todos-delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
+
+#root .app .btn-clear {
+  margin-top: 14px;
+  margin-bottom: 4px;
+  padding: 0 8px;
+  line-height: 30px;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  -webkit-transition: 100ms background-color ease-in;
+  transition: 100ms background-color ease-in;
+  cursor: pointer;
+}
+
+#root .app .btn-clear:hover {
+  background-color: #e6e6e6;
+}
+/*# sourceMappingURL=style.css.map */
